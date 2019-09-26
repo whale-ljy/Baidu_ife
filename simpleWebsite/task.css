@@ -73,13 +73,13 @@ a:hover, a:active {
     width: 100%;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid #ccc;
 }
 .dire_m {
     overflow: hidden;
     width: 960px;
     margin: 0 auto;
     padding: 0;
-    border-bottom: 1px solid #ccc;
 }
 .dire_na {
     float: left;
