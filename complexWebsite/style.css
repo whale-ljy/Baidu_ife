@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+p {
+    margin: 0 auto;
+    max-width: 600px;
+    font: 16px/1.5 "Microsoft YaHei", sans-serif;
+    color: #a9a9a9;
+}
+h1 {
+    /*设置半透明背景色
+    position: relative;*/
+    padding-top: 95px;
+    padding-bottom: 30px;
+    font: 52px/1.5 "Microsoft YaHei", sans-serif;
+    color: #fff;
+}
+/*Head*/
+.head {
+    background-image: url(images/head_gray.png), url(images/head.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /*设置半透明背景色
+    position: absolute;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    *zoom: 1;*/
+}
+.middle {
+    margin: 0 auto;
+    width: 780px;
+    padding-bottom: 50px;
+}
+form {
+    /*设置半透明背景色
+    position: relative;*/
+    margin: 30px auto;
+    padding: 35px 0;
+    border: 1px solid #ccc;
+}
+form>input[type="text"], [type="password"], textarea {
+    padding: 0 10px;
+    margin: 20px 10px 0 10px;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+form>textarea {height: 100px;}
+form>input[type="submit"] {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #ccc;
+}
+form span {
+    font: bold 18px/2 "Microsoft YaHei", sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+}
+form p {
+    margin-bottom: 20px;
+    font: 14px/2 "Microsoft YaHei", sans-serif;
+    letter-spacing: 2px;
+}
+.head p {
+    /*设置半透明背景色
+    position: relative;*/
+    margin: 0 auto;
+    overflow: hidden;
+    width: 700px;
+}
+/*Main1*/
+.main_white {
+    padding-top: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+}
+.m_head {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    color: #111;
+}
+.m_title {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 1.5em;
+}
+.m_table {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.m_table {
+    width: 780px;
+}
+.m_table p,.text p {
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.iphone, .check, .pencil, .settings, .map, .phone, .usermail {
+    padding-left: 50px;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-align: left;
+}
+.iphone {
+    flex: 1;
+    background-image: url(images/Iphone-Icon.png);
+    background-size: 28px 48px;
+}
+.check {
+    flex: 1;
+    background-image: url(images/Check-Icon.png);
+    background-size: 40px;
+}
+.pencil {
+    flex: 1;
+    background-image: url(images/Pencil-Icon.png);
+    background-size: 45px;
+}
+.settings {
+    flex: 1;
+    background-image: url(images/Settings-Icon.png);
+    background-size: 42px;
+}
+/*Main2*/
+.main_img a:link, .main_img a:visited {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+.main_img a:hover, .main_img a:active {
+    background-color: #fff;
+    color: #111;
+}
+.main_img {
+    overflow: hidden;
+    background: url(images/main2_gray.png), url(images/main2.png) no-repeat no-repeat;
+}
+.right {
+    float: right;
+    padding-top: 53px;
+    width: 645px;
+    height: 600px;
+    text-align: right;
+    background: url(images/IPad.png) no-repeat right center;
+}
+.left {
+    float: left;
+    margin-left: 160px;
+    margin-right: 70px;
+    overflow: hidden;
+    width: calc(100% - 645px - 230px);
+}
+/*Main3*/
+.item {
+    flex: 1 auto;
+    padding: 0 25px;
+    overflow: hidden;
+    height: 100%;
+}
+.img {
+    position: relative;
+    background: url(images/4_black.png) no-repeat ;
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    height: 230px;
+}
+.img img, .p_img img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.img img {
+    top: -35px;
+    clip: rect(35px auto 265px auto);
+}
+.text {
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 440px);
+    text-align: left;
+}
+/*Main4*/
+.p_img {
+    flex: 1;
+    position: relative;
+    background: url(images/person_black.png) no-repeat;
+    margin: 10px 15px;
+    height: 240px;
+}
+.p_img img {
+    position: absolute;
+    top: 0;
+    clip: rect(auto auto 240px auto)
+}
+.p_img .p_hover {
+    cursor: pointer;
+    display: none;
+}
+.p_img:hover .p_hover {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.65);
+    width: 100%;
+    height: 100%;
+}
+.p_hover h4, .foot h4 {
+    margin: 0 auto;
+    padding-top: 50px;
+    color: #fff;
+}
+.p_hover .index {
+    display: inline-block;
+    margin: 30px 8px 0 8px;
+    width: 50px;
+}
+.p_hover img {
+    width: 50px;
+    position: static;
+}
+/*Main5*/
+.i_left {
+    float: left;
+    margin-left: 160px;
+    margin-right: 70px;
+    overflow: hidden;
+    width: 500px;
+}
+.i_right {
+    float: right;
+    padding-top: 53px;
+    width: calc(100% - 500px - 230px);
+    text-align: left;
+}
+.i_right p {
+    margin-left: 0;
+}
+.main_white form {
+    text-align: center;
+    color: #111;
+    border: none;
+}
+.main_white form>input[type="submit"] {
+    width: 220px;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #111;
+}
+.map {
+    margin-top: 30px;
+    background-image: url(images/Map-Icon.png);
+    background-size: 25px;
+}
+.phone {
+    margin-top: 30px;
+    background-image: url(images/Phone-Icon.png);
+    background-size: 24px 21px;
+}
+.usermail {
+    margin-top: 30px;
+    background-image: url(images/Mail-Icon.png);
+    background-size: 25px;
+}
+/*Foot*/
+.foot {
+    height: 250px;
+    background: #111;
+}
+.foot img {
+    margin-top: 25px;
+    margin-right: 15px;
+}
