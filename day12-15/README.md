@@ -6,7 +6,7 @@
   float: left;<br/>
   margin-bottom: -9999px;<br/>
   padding-bottom: 9999px;<br/>
-<li>实现图片在父元素垂直居中</li>
+<li>实现子元素在父元素垂直居中</li>
   position: absolute;<br/>
   top: 50%;<br/>
   transform: translateY(-50%);<br/>
@@ -44,3 +44,13 @@
     height: 100%;<br/>
     background-color: rgba(0,0,0,0.65);/*蒙黑色阴影*/<br/>
   }<br/>
+<li>图片水平垂直居中</li>
+  .parent {text-align: center;}
+  .parent .img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }  
