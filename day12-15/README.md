@@ -45,12 +45,12 @@
     background-color: rgba(0,0,0,0.65);/*蒙黑色阴影*/<br/>
   }<br/>
 <li>图片水平垂直居中</li>
-  .parent {text-align: center;}
-  .parent .img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }  
+  .parent {text-align: center;}<br/>
+  .parent .img {<br/>
+    position: absolute;<br/>
+    top: 0;<br/>
+    bottom: 0;<br/>
+    left: 0;<br/>
+    right: 0;<br/>
+    margin: auto;<br/>
+  }<br/>
