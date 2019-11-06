@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简历</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="intro">
+    <div class="head">
+        简历
+        <button id="hello">打招呼</button>
+    </div>
+    <div class="all">
+        <div class="title">基本信息</div>
+        <div class="content">
+            <h4 class="hor">姓名：</h4>
+            <p class="hor_p">张三</p>
+            <h4 class="hor">性别：</h4>
+            <p class="hor_p">男</p>
+            <button id="more">点击查看更多</button>
+            <div id="dis_more"></div>
+        </div>
+    </div>
+    <div class="all">
+        <div class="title">联系方式</div>
+        <div class="content">
+            <h4 class="hor">手机</h4>
+            <p class="hor_p">12312341234</p>
+            <h4 class="hor">Email：</h4>
+            <p class="hor_p"><a href="mailto:123@baidu.com" >123@baidu.com</a></p>
+            <h4 class="hor">主页：</h4>
+            <p class="hor_p"><a href="https://github.com/" >Github</a></p>
+        </div>
+    </div>
+    <div class="all">
+        <div class="title">求职意向</div>
+        <div class="content">
+            <p>Data Analyse; Front-End Web Developer</p>
+        </div>
+    </div>
+    <div class="all">
+        <div class="title">Education</div>
+        <div class="content">
+            <h4>20XX.9-20XX.6 XX University bachelor</h4>
+            <p>Core courses: C programming, Matlab</p>
+            <h4>20XX.9-20XX.6 XX university master</h4>
+            <p>Core courses: AI, stochastic analysis</p>
+        </div>
+    </div>
+    <div class="all">
+        <div class="title">Social Practice</div>
+        <div class="content">
+            <h4>20XX.10-20XX.1 Propaganda Minister</h4>
+            <ul>
+                <li>Make training for officers</li>
+                <li>Make MV as a director</li>
+            </ul>
+            <h4>20XX.4-20XX.6 Work for XX company</h4>
+            <ul>
+                <li>Develop indexs of KPI</li>
+                <li>Demand analysis of a system</li>
+            </ul>
+        </div>
+    </div>
+    <div class="all">
+        <div class="title">Research Experiences</div>
+        <div class="content">
+            <h4>20XX.9 Participated in the national college students mathematical modeling contest</h4>
+            <ul>
+                <li>Make a model of xx</li>
+                <li>Win an award</li>
+            </ul>
+            <h4>20XX.7 Publish a paper in XX</h4>
+            <p>Describe situation of XX of world</p>
+        </div>
+    </div>
+    <div class="all">
+        <div class="title">Prizes</div>
+        <div class="content">
+            <ul>
+                <li>Scholarship</li>
+                <li>Outstanding Student Leader</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bottom">弹窗</div>
+<script>
+    document.getElementById("more").onclick = function(){
+        document.getElementById("dis_more").innerHTML = '被骗了吧，嘻嘻';
+        document.getElementById("dis_more").style.color = '#64d';
+    };
+    document.getElementById("hello").onclick = function() {
+        var mydate=new Date();
+        var myhour=mydate.getHours();
+        if (myhour>=18 || myhour<5) {
+            alert("晚上好");
+        }
+        else if (myhour<=12){
+            alert("早上好");
+        }
+        else {
+            alert("下午好");
+        }
+    }
+</script>
+</body>
+</html>
